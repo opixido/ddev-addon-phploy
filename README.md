@@ -6,7 +6,8 @@ This DDEV add-on adds a `ddev phploy` command to handle deployments through [php
 
 ```bash
 ddev add-on get https://github.com/opixido/ddev-addon-phploy/tarball/master
-ddev restart```
+ddev restart
+```
 
 ## 🔧 Usage
 
