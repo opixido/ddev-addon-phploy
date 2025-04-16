@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  phploy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ddev-${DDEV_PROJECT}-phploy
+    volumes:
+      - ..:/var/www/html
+    working_dir: /var/www/html
