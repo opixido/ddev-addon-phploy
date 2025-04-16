@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Exécuter phploy dans le conteneur
-ddev ssh phploy -c "phploy $*"
+ddev exec -s phploy "phploy $*"
