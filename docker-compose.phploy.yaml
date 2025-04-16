@@ -4,7 +4,7 @@ services:
   phploy:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.phploy
     container_name: ddev-${DDEV_PROJECT}-phploy
     volumes:
       - ..:/var/www/html
