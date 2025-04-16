@@ -1,7 +1,0 @@
-name: phploy
-project_files:
-  - docker-compose.phploy.yaml
-  - commands/host/phploy
-install_script: install.sh
-type: custom
-repository: https://github.com/<TON-USERNAME>/ddev-addon-phploy
