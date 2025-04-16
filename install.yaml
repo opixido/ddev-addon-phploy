@@ -10,5 +10,3 @@ install_actions:
   - copy: [docker-compose.phploy.yaml, .ddev/docker-compose.phploy.yaml]
   - copy: [commands/host/phploy, .ddev/commands/host/phploy]
   - copy: [Dockerfile.phploy, .ddev/Dockerfile.phploy]
-post_install_actions:
-  - exec: echo "✅ phploy prêt à l'emploi. Redémarre avec 'ddev restart'."
