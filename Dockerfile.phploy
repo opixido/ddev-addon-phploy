@@ -2,16 +2,19 @@ FROM php:8.2-cli
 
 RUN apt update
 RUN apt -y install git
+RUN apt -y install docker.io
+RUN apt -y install libzip-dev
 
 RUN docker-php-ext-install ftp
+RUN docker-php-ext-install zip
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && php composer-setup.php \
     && rm composer-setup.php \
     && mv composer.phar /usr/local/bin/composer \
     && composer global require dreadnaut/phploy:dev-master \
-    && chmod +x /root/.composer/vendor/bin/phploy \
-    && ln -sf /root/.composer/vendor/bin/phploy /usr/local/bin
+    && chmod +x /root/.config/composer/vendor/bin/phploy \
+    && ln -sf /root/.config/composer/vendor/bin/phploy /usr/local/bin
 
 
 WORKDIR /var/www/html
