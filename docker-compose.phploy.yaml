@@ -6,4 +6,5 @@ services:
     container_name: ddev-${DDEV_PROJECT}-phploy
     volumes:
       - ..:/var/www/html
+      - /var/run/docker.sock:/var/run/docker.sock
     working_dir: /var/www/html
