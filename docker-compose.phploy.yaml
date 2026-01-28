@@ -8,3 +8,7 @@ services:
       - ..:/var/www/html
       - /var/run/docker.sock:/var/run/docker.sock
     working_dir: /var/www/html
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: ${DDEV_APPROOT}
+
