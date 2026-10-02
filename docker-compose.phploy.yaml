@@ -4,8 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.phploy
-    image: ${DDEV_PHPLOY_IMAGE:-ddev-phploy:latest}-${DDEV_SITENAME}-built
-    pull_policy: build
+    image: php:8.2-cli-${DDEV_SITENAME}-built
     container_name: ddev-${DDEV_SITENAME}-phploy
     volumes:
       - ..:/var/www/html
@@ -14,4 +13,3 @@ services:
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
       com.ddev.approot: ${DDEV_APPROOT}
-
