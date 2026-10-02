@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#ddev-generated
 
 # Exécuter phploy dans le conteneur
 ddev exec -s phploy "phploy $*"

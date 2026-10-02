@@ -1,3 +1,8 @@
+[![add-on registry](https://img.shields.io/badge/DDEV-Add--on_Registry-blue)](https://addons.ddev.com)
+[![tests](https://github.com/opixido/ddev-addon-phploy/actions/workflows/tests.yml/badge.svg)](https://github.com/opixido/ddev-addon-phploy/actions/workflows/tests.yml)
+[![last commit](https://img.shields.io/github/last-commit/opixido/ddev-addon-phploy)](https://github.com/opixido/ddev-addon-phploy/commits)
+[![release](https://img.shields.io/github/v/release/opixido/ddev-addon-phploy)](https://github.com/opixido/ddev-addon-phploy/releases/latest)
+
 # DDEV Add-on: phploy
 
 This DDEV add-on adds a `ddev phploy` command to handle deployments through [phploy](https://github.com/banago/phploy), it includes its own docker container to avoid PHP versions issues.

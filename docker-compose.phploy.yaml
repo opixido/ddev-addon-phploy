@@ -1,8 +1,10 @@
+#ddev-generated
 services:
   phploy:
     build:
       context: .
       dockerfile: Dockerfile.phploy
+    image: ddev-phploy:latest-${DDEV_SITENAME}-built
     container_name: ddev-${DDEV_PROJECT}-phploy
     volumes:
       - ..:/var/www/html

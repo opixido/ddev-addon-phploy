@@ -1,5 +1,6 @@
 name: phploy
 type: custom
+ddev_version_constraint: '>= v1.24.10'
 project_files:
   - docker-compose.phploy.yaml
   - commands/host/phploy
